@@ -29,19 +29,14 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/src/sxastarter" # App source code path
           api_location: "" # Api source code path - optional
-          output_location: "" # Built app content directory - optional
+          output_location: "public" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
         env:
           IS_STATIC_EXPORT: true
           JSS_APP_NAME: "mysite"
           GRAPH_QL_ENDPOINT: "https://edge.sitecorecloud.io/api/graphql/v1"
           SITECORE_API_KEY: "RGY2TGszbnZibmpnWEJmajZ3RzRaUk8vVmJZUXZ5YUloNXpOdVRoY0F6dz18dW5hdmVyaG9ldmVuMS14bWNsb3VkZm91bjQ2MjEtZGV2LTViMzg="
-          SUDO_USER: "SUDO_USER"
-          C9_USER: "C9_USER"
-          LOGNAME: "LOGNAME"
-          USER: "USER"
-          LNAME: "LNAME"
-          USERNAME: "USERNAME"
+          USER: "Miguel"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
