@@ -32,7 +32,7 @@ jobs:
           output_location: "public" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
         env:
-          IS_STATIC_EXPORT: true
+          #IS_STATIC_EXPORT: true
           JSS_APP_NAME: "mysite"
           GRAPH_QL_ENDPOINT: "https://edge.sitecorecloud.io/api/graphql/v1"
           SITECORE_API_KEY: "RGY2TGszbnZibmpnWEJmajZ3RzRaUk8vVmJZUXZ5YUloNXpOdVRoY0F6dz18dW5hdmVyaG9ldmVuMS14bWNsb3VkZm91bjQ2MjEtZGV2LTViMzg="
