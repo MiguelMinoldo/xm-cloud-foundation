@@ -42,7 +42,6 @@ jobs:
           USER: "USER"
           LNAME: "LNAME"
           USERNAME: "USERNAME"
-          ENABLE_ORYX_BUILD: false
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
