@@ -36,11 +36,9 @@ jobs:
           SUDO_USER: ${{ secrets.SUDO_USER }}
           #C9_USER: "C9_USER"
           #LOGNAME: "LOGNAME"
-          USER: ${{ secrets.USER }}
+          #USER: ${{ secrets.USER }}
           #LNAME: "LNAME"
           #USERNAME: "USERNAME"
-          FUNCTION_LANGUAGE_VERSION: 16
-
           ###### End of Repository/Build Configurations ######
         env:
           JSS_APP_NAME: ${{ secrets.JSS_APP_NAME }}
@@ -49,7 +47,7 @@ jobs:
           SUDO_USER: ${{ secrets.SUDO_USER }}
           #C9_USER: "C9_USER"
           #LOGNAME: "LOGNAME"
-          USER: ${{ secrets.USER }}
+          #USER: ${{ secrets.USER }}
           #LNAME: "LNAME"
           #USERNAME: "USERNAME"
           FUNCTION_LANGUAGE_VERSION: 16
