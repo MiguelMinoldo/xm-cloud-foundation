@@ -39,7 +39,7 @@ jobs:
           #USER: ${{ secrets.USER }}
           #LNAME: "LNAME"
           #USERNAME: "USERNAME"
-          FUNCTION_LANGUAGE_VERSION: 16
+          #FUNCTION_LANGUAGE_VERSION: 16
           ###### End of Repository/Build Configurations ######
         env:
           JSS_APP_NAME: ${{ secrets.JSS_APP_NAME }}
