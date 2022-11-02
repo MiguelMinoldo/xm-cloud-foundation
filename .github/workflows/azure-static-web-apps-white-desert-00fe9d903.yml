@@ -37,6 +37,7 @@ jobs:
           PUBLIC_URL: ${{ secrets.PUBLIC_URL }}
           FETCH_WITH: "GraphQL"
           DISABLE_SSG_FETCH: true
+          JSS_MODE: "CONNECTED"
           ###### End of Repository/Build Configurations ######
         env:
           JSS_APP_NAME: ${{ secrets.JSS_APP_NAME }}
@@ -46,6 +47,7 @@ jobs:
           PUBLIC_URL: ${{ secrets.PUBLIC_URL }}
           FETCH_WITH: "GraphQL"
           DISABLE_SSG_FETCH: true
+          JSS_MODE: "CONNECTED"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
