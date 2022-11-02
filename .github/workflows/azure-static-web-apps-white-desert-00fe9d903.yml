@@ -30,14 +30,6 @@ jobs:
           app_location: "/src/sxastarter" # App source code path
           api_location: "" # Api source code path - optional
           output_location: "/.next" # Built app content directory - optional
-          JSS_APP_NAME: ${{ secrets.JSS_APP_NAME }}
-          GRAPH_QL_ENDPOINT: ${{ secrets.GRAPH_QL_ENDPOINT }}
-          SITECORE_API_KEY: ${{ secrets.SITECORE_API_KEY }}
-          SUDO_USER: ${{ secrets.SUDO_USER }}
-          PUBLIC_URL: ${{ secrets.PUBLIC_URL }}
-          FETCH_WITH: "GraphQL"
-          DISABLE_SSG_FETCH: true
-          JSS_MODE: "CONNECTED"
           ###### End of Repository/Build Configurations ######
         env:
           JSS_APP_NAME: ${{ secrets.JSS_APP_NAME }}
