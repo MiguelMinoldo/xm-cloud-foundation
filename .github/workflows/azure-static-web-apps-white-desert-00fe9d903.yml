@@ -35,25 +35,17 @@ jobs:
           SITECORE_API_KEY: ${{ secrets.SITECORE_API_KEY }}
           SUDO_USER: ${{ secrets.SUDO_USER }}
           PUBLIC_URL: ${{ secrets.PUBLIC_URL }}
-          #C9_USER: "C9_USER"
-          #LOGNAME: "LOGNAME"
-          #USER: ${{ secrets.USER }}
-          #LNAME: "LNAME"
-          #USERNAME: "USERNAME"
-          #FUNCTION_LANGUAGE_VERSION: 16
+          FETCH_WITH: "GraphQL"
+          DISABLE_SSG_FETCH: true
           ###### End of Repository/Build Configurations ######
         env:
           JSS_APP_NAME: ${{ secrets.JSS_APP_NAME }}
           GRAPH_QL_ENDPOINT: ${{ secrets.GRAPH_QL_ENDPOINT }}
           SITECORE_API_KEY: ${{ secrets.SITECORE_API_KEY }}
           SUDO_USER: ${{ secrets.SUDO_USER }}
-          #C9_USER: "C9_USER"
-          #LOGNAME: "LOGNAME"
-          #USER: ${{ secrets.USER }}
-          #LNAME: "LNAME"
-          #USERNAME: "USERNAME"
-          #FUNCTION_LANGUAGE_VERSION: 16
           PUBLIC_URL: ${{ secrets.PUBLIC_URL }}
+          FETCH_WITH: "GraphQL"
+          DISABLE_SSG_FETCH: true
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
