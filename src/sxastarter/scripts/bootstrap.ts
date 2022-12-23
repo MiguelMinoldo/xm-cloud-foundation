@@ -25,6 +25,7 @@ if (disconnected) {
       )
     );
   }
+  console.log('This is localhost...');
   configOverride.sitecoreApiHost = `http://localhost:${port}`;
 }
 
